@@ -1,0 +1,29 @@
+.promo {
+    min-height: 100vh;
+    padding-top: 206px;
+    background: url('../../img/IMG_20191023_141235.jpg') no-repeat 50%/cover;
+    &__title {
+        width: 530px;
+    }
+    &__subtitle {
+        @include before_circle;
+        z-index: 2;
+        position: relative;
+        padding-left: 10px;
+    }
+    &__btns {
+        width: 250px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        color: black;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

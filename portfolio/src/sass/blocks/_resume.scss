@@ -1,0 +1,81 @@
+.resume {
+    padding-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        padding: 60px 89px 0 65px;
+        column-gap: 136px;
+    }
+    &__column {
+        &-title {
+            padding-left: 35px;
+            position: relative;
+            &:before{
+                top: 50%;
+                transform: translateY(-50%);
+                left: -7px;
+                position: absolute;
+                content: '';
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: $main-color;
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 9px);
+                    background-color: #000;
+                    top: -9px;
+                }
+            }
+        }
+    }
+    &__item {
+        padding-left: 43px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 43px;
+            height: 1px;
+            background-color: #000;
+            top: 63px;
+            left: 0;
+        }
+        &-head {
+            position: relative;
+            padding-top: 45px;
+            padding-left: 56px;
+        }
+        &-icon {
+            position: absolute;
+            top: 45px;
+            left: 0px;
+            @include before_circle;
+            img {
+                position: absolute;
+                top: 14px;
+                left: 17px;
+            }
+        }
+        h4 {
+            margin-bottom: 0;
+        }
+        &-location {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+        &-body {
+            margin-top: 12px;
+        }
+    }
+}
