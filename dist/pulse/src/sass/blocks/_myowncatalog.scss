@@ -1,0 +1,153 @@
+.catalog {
+    margin-bottom: 76px;
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-top: 46px;
+        align-items: center;
+        padding-left: 0;
+    }
+    &__tab {
+        text-align: center;
+        width: 223px;
+        height: 52px;
+        background: rgba(0, 0, 0, 0.0001);
+        border: 2px solid #D0D0D0;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #6B6B6B;
+        margin: 0 5px;
+        line-height: 48px;
+        transform: skewX(-25deg);
+        cursor: pointer;
+        &_active {
+            color: #fff;
+            background-color: $main-color;
+            border: none;
+        }
+        div {
+            transform: skewX(25deg);
+        }
+    }
+    &__content {
+        margin-top: 60px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &-item {
+        border: 2px solid #E8E8E8;
+        padding: 20px 26px 21px 23px;
+        width: 300px;
+        min-height: 440px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content {
+            width: 50%;
+            transform: translateX(-100%);
+            margin-right: 0px;
+            &_active {
+                transform: translateX(0%); 
+                margin-right: 20px;               
+            }
+        }
+        &__img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        &__subtitle {
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &__descr {
+            margin-top: 15px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &__link {
+            display: block;
+            margin-top: 10px;
+            color: $main-color;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            text-decoration-line: underline;
+        }
+        &__list {
+            position: relative;
+            width: 50%;
+            transform: translateX(0%);
+            margin-left: 20px;
+            margin-bottom: 0;
+            list-style-type: none;
+            padding-right: 20px;
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0;
+            }
+            li {
+                position: relative;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: #555555;
+                margin-bottom: 20px;
+                &:before {
+                    left: -14px;
+                    top: 7px;
+                    position: absolute;
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background-color: $main-color;
+                }
+            }
+        }
+        &__back {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: $main-color;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+        }
+        hr {
+            margin: 17px 0;
+            background-color: #E8E8E8;
+            border-bottom: none;
+        }
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__old-price {
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration-line: line-through;
+            color: #555555;
+        }
+        &__new-price {
+            font-weight: 700;
+            font-size: 20px;
+            color: #050505;
+        }
+    }
+}

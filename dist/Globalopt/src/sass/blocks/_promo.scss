@@ -1,0 +1,75 @@
+.promo {
+    min-height: 680px;
+    background: url(../img/promo/background.png)  left 40% center / cover no-repeat;
+    padding: 23px 0 81px 0;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 58px;
+        align-items: center;
+    }
+    &__text {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+    }
+    &__header {
+        margin-top: 26px;
+        font-size: 72px;
+        font-weight: 700;
+        color: $main-color;
+    }
+    &__subheader {
+        font-family: "Roboto Condensed";
+        font-size: 42px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__divider {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        margin-top: 38px;
+        background-color: #ffffff;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 400px;
+            height: 1px;
+            background-color: #ffffff;
+            top: 50%;
+            right: 20px;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 400px;
+            height: 1px;
+            background-color: #ffffff;
+            top: 50%;
+            left: 20px;
+        }
+    }
+    &__item {
+        margin-top: 31px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-wrapper {
+            width: 282px;
+            text-align: center;
+        }
+    }
+    &__descr {
+        margin-top: 16px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+    }
+}

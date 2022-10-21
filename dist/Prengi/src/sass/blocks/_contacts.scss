@@ -1,0 +1,29 @@
+.contacts {
+    padding: 19px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        align-items: start;
+        column-gap: 11px;
+    }
+    &__address {
+        display: flex;
+        flex-direction: column;
+    }
+    &__country {
+        font-size: 14px;
+        font-weight: 700;
+        color: #242424;
+    }
+    &__phone, &__email {
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        text-decoration: none;
+        color: #242424;
+    }
+}

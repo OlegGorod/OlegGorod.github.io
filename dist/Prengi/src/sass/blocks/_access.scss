@@ -1,0 +1,14 @@
+.access {
+    padding: 80px 0;
+    &__icon {
+        margin: 0 auto;
+        display: block;
+    }
+    &__title {
+        margin-top: 74px;
+        color: #393939;
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+}

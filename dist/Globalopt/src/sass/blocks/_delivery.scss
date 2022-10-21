@@ -1,0 +1,16 @@
+.delivery {
+    padding: 51px 0 57px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        margin-top: 37px;
+        column-gap: 30px;
+        &-item {
+            display: flex;
+            flex-direction: column;
+        }
+        &-img {
+            margin-bottom: 28px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.feedback {
+    padding: 51px 0 65px 0;
+    &__carousel {
+        margin-top: 31px;
+        text-align: center;
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 100%;
+        }
+        .slick-prev {
+            border: none;
+            background-color: #fff;
+            position: absolute;
+            left: 40%;
+            top: 40px;
+            z-index: 100;
+            cursor: pointer;
+            &:hover {
+                background-color: revert;
+            }
+            
+        }
+        .slick-next {
+            border: none;
+            background-color: #fff;
+            cursor: pointer;
+            position: absolute;
+            top: 40px;
+            right: 40%;
+            z-index: 100;
+            &:hover {
+                background-color: revert;
+            }
+        }
+        &-wrapper {
+            margin: 0 auto;
+            width: 100%;
+            min-height: 108px;
+            text-align: center;
+        }
+        &-title {
+            margin-top: 19px;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            color: #3a3a3a;
+        }
+        &-subtitle {
+            margin-top: 9px;
+            color: #3a3a3a;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22.01px;
+        }
+    }
+}

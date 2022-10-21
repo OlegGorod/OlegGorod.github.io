@@ -1,0 +1,18 @@
+.scheme {
+    background-color: #f3f3f3;
+    padding: 51px 0 46px 0;
+    &__wrapper {
+        display: flex;
+        margin-top: 29px;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-item {
+            text-align: center;
+            flex-basis: 257px;
+            margin-bottom: 20px;
+            &:nth-child(5), &:nth-child(6), &:nth-child(7) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

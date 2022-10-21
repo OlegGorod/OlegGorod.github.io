@@ -1,0 +1,47 @@
+.section {
+    padding: 58px 0 75px 0;
+    &__icon {
+        margin: 0 auto;
+        display: block;
+    }
+    &__subtitle {
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 27px;
+        text-align: center;
+        padding: 22px 225px 0 225px;
+    }
+    &_agent {
+        background: url(../img/section/agent-china-bg.jpg) center center/cover no-repeat;
+        z-index: 0;
+        position: relative;
+        &::before {
+            content: '';
+            background-color: #414141;
+            opacity: 0.3;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+        }
+    }
+    &_manager {
+        background: url(../img/section/managers-bg.jpeg) center center/cover no-repeat;
+        z-index: 0;
+        position: relative;
+        &::before {
+            content: '';
+            background-color: #414141;
+            opacity: 0.3;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+        }
+    }
+}

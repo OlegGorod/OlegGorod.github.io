@@ -1,0 +1,61 @@
+.decisions {
+    padding: 71px 0 69px 0;
+    background: url(../img/background2.png) center/cover no-repeat;
+    &__title {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        }
+    &__tabs {
+        margin: 0 auto;
+        margin-top: 32px;
+        width: 1020px;
+        display: grid;
+        grid-template: 65px / repeat(6, 170px);
+        border: 1px solid #ffffff;
+        align-items: center;
+        border-radius: 5px;
+        &-item {
+            text-align: center;
+            border-right: 1px solid #8b9192;
+            list-style-type: none;
+            line-height: 45px;
+            &:nth-child(6) {
+                border-right: none;
+            }
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 400;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+    &__carousel {
+        margin: 0 auto;
+        margin-top: 44px;
+        display: block;
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            :hover {
+                background-color: gray;
+            }
+        }
+        .slick-prev {
+            position: absolute;
+            top: 260px;
+            left: -40px;
+        }
+        .slick-next {
+            position: absolute;
+            top: 260px;
+            right: -40px;
+        }
+    }
+}

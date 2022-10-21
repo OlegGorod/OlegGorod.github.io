@@ -1,0 +1,28 @@
+.advantages {
+    padding: 81px 0 80px 0;
+    &__title {
+        color: #393939;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 44px;
+        display: grid;
+        grid-template: repeat(3, 355px)/repeat(2, 570px);
+    }
+    &__item {
+        position: relative;
+    }
+    &__descr {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+    }
+}

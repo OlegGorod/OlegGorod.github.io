@@ -1,0 +1,20 @@
+.advantages {
+    padding: 57px 0 51px 0;
+    background-color: #f3f3f3;
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(4, minmax(65px, auto))/repeat(2, 526px);
+        grid-auto-rows: auto;
+        row-gap: 36px;
+        column-gap: 62px;
+        margin-top: 32px;
+    }
+    &__item {
+        display: flex; 
+        column-gap: 20px;
+        align-items: flex-start;
+        &:nth-child(7) {
+            column-gap: 10px;
+        }
+    }
+}

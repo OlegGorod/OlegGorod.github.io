@@ -1,0 +1,84 @@
+.data {
+    position: relative;
+    display: flex;
+    &__title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 79px;
+    }
+    &__cloud {
+        width: 50%;
+        padding-right: 82px;
+        background: url(../img/versions/version1.png) center/cover no-repeat ;
+        display: flex;
+        flex-direction: row-reverse;
+  
+    }
+    &__server {
+        width: 50%;
+        background: url(../img/versions/version2.png) center/cover no-repeat ;
+        padding-left: 82px;
+    }
+    &__text {
+        width: 480px;
+        padding: 270px 0 220px 0;
+        &-subtitle {
+            text-transform: uppercase;
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .tar {
+            text-align: right;
+        }
+        &-descr {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 26px;
+            margin-top: 20px;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 167px;
+                height: 167px;
+                background-color: #00c2f0;
+                opacity: .3;
+                top: 235px;
+            }
+            &-left {
+                text-align: right;
+                &::after {
+                    right: calc(50% + 43px);
+                }
+            }
+            &-right {
+                &::after {
+                    left: calc(50% + 43px);
+                }
+            }
+        }
+    }
+    // &__centered {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     text-align: center;
+    // }
+    
+    // .left {
+    //     left: 0;
+    //     background: url(../img/versions/version1.png) center/cover no-repeat ;
+    // }
+    // .right {
+    //     right: 0;
+    //     background: url(../img/versions/version2.png) center/cover no-repeat ;
+    // }
+    
+}

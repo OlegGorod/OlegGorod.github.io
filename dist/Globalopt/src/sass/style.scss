@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+@import 'base/variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.divider {
+    width: 148px;
+    height: 1px;
+    background-color: $main-color;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.pageup {
+    position: fixed;
+    display: none;
+    width: 40px;
+    height: 40px;
+    bottom: 75px;
+    right: 20px;
+}
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/button';
+@import 'blocks/advantages';
+@import 'blocks/title';
+@import 'blocks/delivery';
+@import 'blocks/section';
+@import 'blocks/price';
+@import 'blocks/consultation';
+@import 'blocks/scheme';
+@import 'blocks/feedback';
+@import 'blocks/questions';
+@import 'blocks/map';
+@import 'blocks/footer';
+@import 'blocks/media';

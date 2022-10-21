@@ -1,0 +1,41 @@
+.button {
+    background-color: $main-color;
+    border-radius: 25px;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba($main-color, .8);
+    }
+    &_nav, &_footer {
+        width: 160px;
+        height: 45px;
+        margin-left: 19px;
+    }
+    &_promo {
+        margin-top: 39px;
+        width: 230px;
+        height: 57px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &_price {
+        width: 160px;
+        height: 45px;
+    }
+    &_form {
+        width: 180px;
+        height: 45px;
+        left: 16px;
+        position: absolute;
+    }
+    &_questions {
+        width: 180px;
+        height: 45px;
+        display: block;
+        margin: 0 auto;
+    }
+}
